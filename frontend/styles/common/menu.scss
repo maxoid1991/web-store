@@ -28,17 +28,22 @@
             width: 100%;
             display: none;
         }
+
+        &--hide-arrow:hover {
+            .brands {
+                padding: 0;
+            }
+        }
     }
 
     .brands {
-        padding: 0;
         top: 50px;
         margin-left: -16px;
         position: absolute;
         z-index: 1;
         background: #f9f9f9;
-        padding: 40px 30px;
         display: none;
+        padding: 40px 30px;
 
         .brands-list {
             float: left; 
