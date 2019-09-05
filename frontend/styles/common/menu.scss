@@ -176,6 +176,10 @@
             margin-right: -4px;
         }
 
+        &--hide-arrow > li::after {
+            content: "";
+        }
+
         .brands {
             display: none;
             background: none;
@@ -270,6 +274,12 @@
         ul li.title::after {
             content: '+';
             float: right;
+        }
+
+        ul li.title {
+            &--hidden::after {
+                content: '';
+            }
         }
     }
 

@@ -13,8 +13,6 @@ class Header extends Component {
         const mobileMenu = this.props.links.mobileMenuButton.current;
         const authorizationBlock = this.props.links.authorization.current;
 
-        console.log(this.props);
-
         mobileMenu && mobileMenu.classList.remove('menu--hidden');
         authorizationBlock && authorizationBlock.classList.add('registration-basket--shown-menu');
     }

@@ -7,7 +7,23 @@ import '../styles/main.scss';
 
 import { store } from "./store/store";
 import { updateStore } from './actionCreators/actionCreator';
-store.dispatch(updateStore(["iPhone 7 Plus", "Samsung Galaxy", "Huawei Honor P30"]));
+
+//Async action creator. For example fetch API
+const asyncFunc = () => {
+    return dispatch => {
+        setTimeout(() => {
+            console.log('Delay dispatching!');
+            dispatch({type: "updateMain", phones: ["iPhone 7 Plus", "Samsung Galaxy", "Huawei Honor P30"]});
+            console.log(store.getState());
+        }, 3000);
+    }
+};
+
+store.dispatch(asyncFunc());
+
+//Sync action creator
+//store.dispatch(updateStore(["iPhone 7 Plus", "Samsung Galaxy", "Huawei Honor P30"]));
+
 
 import { Catalog } from './components/Catalog';
 import Main from './components/Main';

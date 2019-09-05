@@ -15,7 +15,11 @@ class Menu extends Component {
         const menuData = menu.menuItems;
 
         for (let item in menuData) {
-            result.push(<Category key={item} title={item} brandslist={menuData[item]} />);
+            if (!menuData[item].length) {
+                result.push(<Category key={item} style={true} title={item} brandslist={menuData[item]} />);
+            } else {
+                result.push(<Category key={item} title={item} brandslist={menuData[item]} />);
+            }
         }
         
         return result;
@@ -24,7 +28,9 @@ class Menu extends Component {
     toggleCategory(event) {
         const { target }        = event;
         const category          = target.closest('.category');
+        const closestWrapper    = event.target.closest('.category');
 
+        if (!closestWrapper.querySelector('.brands-list')) return;
         if (!category) return;
 
         const menuItem          = target.classList.contains('menu-item');
