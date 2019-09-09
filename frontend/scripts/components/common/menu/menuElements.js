@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export const Category = (props) => {
     return (
         <ul className={props.style ? 'category category--hide-arrow' : 'category'}>
-            <li className="menu-item">{props.title.toUpperCase()}</li>
+            <li className="menu-item"><a href="http://www.google.com" target='_blank'>{props.title.toUpperCase()}</a></li>
             <ul className='brands'>
                 { props.brandslist.map((list, id) =>
                     <ul key={id} className='brands-list'>

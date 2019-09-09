@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Provider } from "react-redux";
 
 import '../styles/main.scss';
+import '../resources/icon_fonts/icofont/icofont.min.css';
 
 import { store } from "./store/store";
 import { updateStore } from './actionCreators/actionCreator';

@@ -56,6 +56,18 @@ const data = {
             },
 
             {
+                'Ultimate Direction' : [
+                    {'product': 'Ultimate Direction', 'link' : 'www.serta.com'},   
+                    {'product': 'Ultimate Hydration Packs', 'link' : 'www.serta.com'},
+                    {'product': "Ultimate Men's Jackets", 'link' : 'www.serta.com'},
+                    {'product': 'Ultimate Running Belts', 'link' : 'www.serta.com'},
+                    {'product': 'Ultimate Water Bottles', 'link' : 'www.serta.com'},
+                    {'product': "Ultimate Women's Jackets", 'link' : 'www.serta.com'},
+                 ]
+
+            },
+
+            {
                 'wenzel' : [
                     {'product': 'wenzel', 'link' : 'www.serta.com'},   
                     {'product': 'Wenzel Airbeds', 'link' : 'www.serta.com'},
@@ -65,10 +77,7 @@ const data = {
                     {'product': 'Wenzel Sleeping Bags', 'link' : 'www.serta.com'},
                     {'product': 'Wenzel Tailgating', 'link' : 'www.serta.com'},
                     {'product': 'Wenzel Tents & Shelters', 'link' : 'www.serta.com'},
-                    
-
                  ]
-
             }
             
         ],
@@ -117,11 +126,106 @@ const data = {
             }
         ],
 
-        'tents & shelters' : [],
-        'packs' : [],
-        'men' : [],
-        'women' : [],
-        'kids' : [],
+        'tents & shelters' : [
+            {
+                'footprints' : [
+                    {'product': 'footprints', 'link' : 'www.kelty.com'},
+                ],
+
+                'shelters' : [
+                    {'product': 'shelters', 'link' : 'www.kelty.com'}
+                ],
+
+                'traps & bivys' : [
+                    {'product': 'traps & bivys', 'link' : 'www.kelty.com'}
+                ],
+
+                'tent accessories' : [
+                    {'product': 'tent accessories', 'link' : 'www.kelty.com'}
+                ],
+
+                'tents' : [
+                    {'product': 'tents', 'link' : 'www.kelty.com'}
+                ],
+            },
+        ],
+
+        'packs' : [
+            {
+                'accessories' : [
+                    {'product': 'accessories', 'link' : 'www.kelty.com'},
+                ],
+
+                'duffel' : [
+                    {'product': 'duffel', 'link' : 'www.kelty.com'}
+                ],
+
+                'military/tactical' : [
+                    {'product': 'military/tactical', 'link' : 'www.kelty.com'}
+                ],
+
+                'travel' : [
+                    {'product': 'travel', 'link' : 'www.kelty.com'}
+                ],
+
+                'waist packs' : [
+                    {'product': 'waist packs', 'link' : 'www.kelty.com'}
+                ],
+            },
+        ],
+
+        'men' : [
+            {
+                'bottoms' : [
+                    {'product': 'bottoms', 'link' : 'www.kelty.com'},
+                ],
+
+                'jackets' : [
+                    {'product': 'jackets', 'link' : 'www.kelty.com'}
+                ],
+
+                'hats' : [
+                    {'product': 'hats', 'link' : 'www.kelty.com'}
+                ],
+
+                'tops' : [
+                    {'product': 'tops', 'link' : 'www.kelty.com'}
+                ],
+            },
+        ],
+
+        'women' : [
+            {
+                'bottoms' : [
+                    {'product': 'bottoms', 'link' : 'www.kelty.com'},
+                ],
+
+                'jackets' : [
+                    {'product': 'jackets', 'link' : 'www.kelty.com'}
+                ],
+
+                'hats' : [
+                    {'product': 'hats', 'link' : 'www.kelty.com'}
+                ],
+
+                'tops' : [
+                    {'product': 'tops', 'link' : 'www.kelty.com'}
+                ],
+            },
+        ],
+
+        'kids' : [
+            {
+                'child carriers' : [
+                    {'product': 'child carriers', 'link' : 'www.kelty.com'},
+                ],
+
+                'kids sleeping bags' : [
+                    {'product': 'kids sleeping bags', 'link' : 'www.kelty.com'}
+                ]
+            },
+        ],
+        
         'sale' : [],
         'shipping & returns' : [],
         'contact us' : [],

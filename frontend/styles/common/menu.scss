@@ -2,6 +2,8 @@
     .close-wrapper {
         display: none;
     }
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 .menu-wrapper {
@@ -13,11 +15,15 @@
     .category {
         display: inline-block;
         padding: 16px;
-
-
+        
         & > li {
             list-style: none;
             position: relative;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: black;
         }
 
         & > li::before {
@@ -34,6 +40,19 @@
                 padding: 0;
             }
         }
+
+        &:hover {
+            .brands {
+                display: flex;
+                flex-wrap: wrap;
+                
+                .brands-list {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 
     .brands {
@@ -43,23 +62,23 @@
         z-index: 1;
         background: #f9f9f9;
         display: none;
-        padding: 40px 30px;
+        padding: 20px 30px;
 
         .brands-list {
-            float: left; 
+            padding: 5px 0;
 
             ul + ul {
                 padding-top: 40px;
 
                 .title {
-                    padding-top: 30px;
+                    padding-top: 10px;
                 }
             }
 
         }
 
         ul {
-            min-width: 237px;
+            min-width: 240px;
             padding: 0;
 
             li {
@@ -100,10 +119,6 @@
 @media all and (min-width: 801px) {
     .category:hover {
         background: #f9f9f9;
-
-        .brands {
-            display: block;
-        }
 
         & > li::before {
             display: block;
@@ -155,7 +170,7 @@
     }
 }
 
-.menu-wrapper {
+.menu .menu-wrapper {
     background: white;
     padding-left: 0;
     width: 70%;
@@ -189,20 +204,20 @@
             display: none;
             background: none;
             position: static;
-            padding: 20px 0 0 50px;
+            padding: 12px 0 0 50px;
 
             ul {
                 min-width: 0;
 
                & + ul {
-                    padding: 8px 0 0 0;
+                    padding: 0;
                 }
             }
 
             ul li {
                 float: none;
                 line-height: 20px;
-                padding: 8px 20px 8px 8px;
+                padding: 4px 20px 4px 8px;
                 font-size: 14px;
 
                 &::after {
@@ -212,9 +227,18 @@
 
             .brands-list {
                 float: none;
+                padding: 0;
+
+                .title + li {
+                    margin-top: 8px;
+                }
 
                 ul li:not(.title) {
                     display: none;
+                }
+
+                ul {
+                    padding: 5px 0;
                 }
 
                 ul.shown {
@@ -227,13 +251,8 @@
                         margin-right: -2px;
                     }
                 }
-
-                ul + ul {
-                    padding: 8px 0 0 0;;
-                }
             }
         }
-
 
         &--shown {
             .brands {
